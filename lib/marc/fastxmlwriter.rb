@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "marc/fastxmlwriter/version"
 
 require "marc"
@@ -50,7 +51,8 @@ module MARC
       end
 
       def encode(r)
-        xml = "<record>"
+        xml = String.new
+        xml << "<record>"
 
         # MARCXML only allows alphanumerics or spaces in the leader
         lead = r.leader.gsub(/[^\w|^\s]/, "Z").encode(xml: :text)
