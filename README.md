@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> Replaced by Marc::UnsafeXMLWriter from [ruby-marc](https://github.com/ruby-marc/ruby-marc/)
+
 # Marc::FastXMLWriter
 
 [![Build Status](https://travis-ci.org/billdueber/marc-fastxmlwriter.svg?branch=master)](https://travis-ci.org/billdueber/marc-fastxmlwriter)
